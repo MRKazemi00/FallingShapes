@@ -1,15 +1,15 @@
 class Shape{
-    constructor(maxR,minR,maxV,minV,numOfObj){
-        this.minR = minR;
+    constructor(maxR,minR,maxV,minV,a){
+        this.minR = minR; 
         this.maxR = maxR;
         this.minV = minV;
         this.maxV = maxV;
-        this.numOfObj = numOfObj;
+        this.a = a;
 
     }
 
-    create (){
-        for(let i = 0; i < numOfObj; i++){
+    create (maxR,minR,maxV,minV,a){
+        for(let i = 0; i < a; i++){
           var circle = {
             x:random(width-30),
             y:0+15,

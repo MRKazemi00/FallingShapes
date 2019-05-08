@@ -1,6 +1,6 @@
 class Circles extends Shape{
-constructor(maxR,minR,maxV,minV,numOfObj){
-super(maxR,minR,maxV,minV,numOfObj);
+constructor(maxR,minR,maxV,minV,a){
+super(maxR,minR,maxV,minV,a);
 }
   /*var circles = [];
 var counter = 0;
