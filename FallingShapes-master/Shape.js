@@ -55,25 +55,27 @@ class Shape{
               }
               }
 
+
+              repeat(maxR,minR,maxV,minV,a,counter){
+                if(shapes.length == 0){
+              
+                  this.create(maxR,minR,maxV,minV,a,counter);
+                  this.display(counter);
+              
+                }
+              }
             
     
-repeat(){
-    if(shapes.length == 0){
   
-      this.create();
-      this.display();
-  
-    }
-  }
 
   levelUp(){
-    if(counter > 9){
-      minR = 15;
-      maxR = 18;
-      maxV = 3;
-      minV = 2;
-      numOfObj = 10;
-    
+    if(counter > 5){
+      this.minR = 15;
+      this.maxR = 18;
+      this.maxV = 10;
+      this.minV = 10;
+      this.a = 10;
+      console.log("HEYGUYS");
       }
     }
 

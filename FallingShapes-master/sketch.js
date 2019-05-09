@@ -20,10 +20,11 @@ circles.create(25,20,1,2,4);
 function draw() {
 background(0);
 
-circles.display();
-circles.move();
-circles.repeat();
 circles.levelUp();
+circles.display(counter);
+circles.move();
+circles.repeat(25,20,1,2,4,counter);
+
 
 
 
