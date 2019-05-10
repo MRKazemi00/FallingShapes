@@ -23,7 +23,7 @@ background(0);
 circles.levelUp();
 circles.display(counter);
 circles.move();
-circles.repeat(25,20,1,2,4,counter);
+circles.repeat(counter);
 
 
 

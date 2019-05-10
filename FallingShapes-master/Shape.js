@@ -56,10 +56,10 @@ class Shape{
               }
 
 
-              repeat(maxR,minR,maxV,minV,a,counter){
+              repeat(){
                 if(shapes.length == 0){
               
-                  this.create(maxR,minR,maxV,minV,a,counter);
+                  this.create(this.maxR,this.minR,this.maxV,this.minV,this.a);
                   this.display(counter);
               
                 }
@@ -75,7 +75,8 @@ class Shape{
       this.maxV = 10;
       this.minV = 10;
       this.a = 10;
-      console.log("HEYGUYS");
+      console.log(this.a , this.maxR, this.maxV);
+      
       }
     }
 
