@@ -40,6 +40,7 @@ foo=true;
 }
 
 
+
 if(counter > 10){
 
 squares.levelUp();
@@ -47,6 +48,7 @@ squares.display(counter);
 squares.move();
 squares.repeat(counter);
 squares.gameOver();
+console.log(shapes);
 
 }
 

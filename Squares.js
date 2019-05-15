@@ -3,6 +3,35 @@ class Squares extends Shape{
     super(maxR,minR,maxV,minV,a);
   }
   
+  create (maxR,minR,maxV,minV,a){
+    console.log("Test1");
+    for(let i = 0; i < a; i++){
+      var square = {
+        x:random(width-30),
+        y:0+15,
+        r:random(minR,maxR),
+        v:random(minV,maxV),
+        c: [random(50,250), random(50,250) ,random(50,250)],
+      }
+    
+      var overlapping = false;
+      for(var j = 0; j<shapes.length ; j++){
+           var other = shapes[j];
+            var d = dist(square.x, square.y, other.x , other.y);
+             if( d < square.r + other.r){
+                   overlapping= true;
+            break;
+        }
+    }
+    
+    if(!overlapping) {
+      shapes.push(square);
+      console.log("Square pushed!")
+        }
+      }
+    }
+
+
   display (){
     for(var b = 0; b < shapes.length; b++) {
       fill(shapes[b].c[0], shapes[b].c[1], shapes[b].c[2], 100);
@@ -18,32 +47,7 @@ class Squares extends Shape{
       }
     }
 
-    create (maxR,minR,maxV,minV,a){
-      for(let i = 0; i < a; i++){
-        var square = {
-          x:random(width-30),
-          y:0+15,
-          r:random(minR,maxR),
-          v:random(minV,maxV),
-          c: [random(50,250), random(50,250) ,random(50,250)],
-        }
-      
-        var overlapping = false;
-        for(var j = 0; j<shapes.length ; j++){
-             var other = shapes[j];
-              var d = dist(square.x, square.y, other.x , other.y);
-               if( d < square.r + other.r){
-                     overlapping= true;
-              break;
-          }
-      }
-      
-      if(!overlapping) {
-        shapes.push(square);
-          }
-        }
-      }
-
+    
 
 
 

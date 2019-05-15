@@ -7,7 +7,7 @@ class Shape{
         this.a = a;
 
     }
-
+/*
     create (maxR,minR,maxV,minV,a){
         for(let i = 0; i < a; i++){
           var circle = {
@@ -29,11 +29,16 @@ class Shape{
         }
         
         if(!overlapping) {
+
           shapes.push(circle);
+          console.log("circle pushed!")
+
             }
           }
         }
-
+        */
+        //abstract display();
+/*
     display (){
             for(var b = 0; b < shapes.length; b++) {
               fill(shapes[b].c[0], shapes[b].c[1], shapes[b].c[2], 100);
@@ -47,7 +52,7 @@ class Shape{
                 console.log(counter);
                 }
               }
-            }
+    }*/
             
     move(){
                 for (let i = 0; i < shapes.length; i++){
@@ -60,6 +65,7 @@ class Shape{
                 if(shapes.length == 0){
               
                   this.create(this.maxR,this.minR,this.maxV,this.minV,this.a);
+                  console.log("create again length is 0")
                   this.display(counter);
               
                 }
@@ -72,8 +78,8 @@ class Shape{
     if(counter > 5){
       this.minR = 15;
       this.maxR = 25;
-      this.maxV = 4;
-      this.minV = 2;
+      this.maxV = 1;
+      this.minV = 1;
       this.a = 7;
       console.log(this.a , this.maxR, this.maxV);
       
