@@ -1,5 +1,8 @@
 README för Falling shapes
 
+OBS:
+Du måste ha p5.js för att kunna spela spelet
+
 I detta spel skall du ta dig igenom flera stadier av fallande former geonm att hindra olika de formerna att nå marken genom att klicka på dem med din mus.
 Om du misslyckas att hindra någon av figurerna att nå marken förlorar du men det är okej! Det är bara att försöka igen.
 
